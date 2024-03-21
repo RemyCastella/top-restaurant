@@ -1,0 +1,156 @@
+:root {
+    --red: #8B0000;
+    --transparent-red: #8b0000d1;
+    --beige: #FFE6AA;
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url(./fonts/BarettStreet.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url(./fonts/coolvetica.otf) format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+
+    background-image: url('./img/alley.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+
+    color: white;
+
+    font-family: 'coolvetica';
+}
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+#logo {
+    align-self: center;
+    font-size: 5rem;
+    font-family: 'logo';
+}
+
+nav {
+    justify-self: end;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    font-family: 'coolvetica';
+}
+
+button.active {
+    color: var(--red);
+    border-bottom: 3px solid var(--red);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.content-box {
+    background: var(--transparent-red);
+    border-radius: 1rem;
+    width: 70%;
+    height: auto;
+    padding: 3rem;
+}
+
+img {
+    height: 30rem;
+    width: auto;
+    border-radius: 2rem;
+}
+
+.page-title {
+    font-family: 'logo';
+    font-size: 7rem;
+    margin-bottom: 4rem;
+}
+
+
+/* home page */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* home page */
+
+
+/* menu page */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+img.menu {
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+/* menu page */
+
+/* contact page */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contact page */
